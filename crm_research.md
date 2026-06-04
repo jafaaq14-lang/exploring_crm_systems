@@ -134,7 +134,7 @@ This section details the deployment configuration and functional evaluation of *
 The application states below were captured from the local running container architecture and committed to the repository structure:
 
 *   **Login Screen Verification:**
-    `![Login Screen](screenshots/login.png)`
+    `![Login Screen]("C:\Users\Jaffe\Downloads\epsocrm\Login.png")`
     *System Detail:* Verifies functional session routing and core framework initialization.
 *   **Dashboard Verification:**
     `![Dashboard](screenshots/dashboard.png)`
