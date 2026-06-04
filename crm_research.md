@@ -60,3 +60,23 @@ CRM systems address critical operational bottlenecks across diverse sectors by p
 - *Mechanism: Donor Lifecycle Tracking.* Automates "thank you" sequences and impact reporting, fostering long-term donor relationships.
 - *Problem: Fragmented Volunteer Management.* Difficulty matching volunteer skills with organizational needs.
 - *Mechanism: Resource Allocation Tools.* Centralized portals track volunteer availability, skills, and history to optimize deployment.
+
+## 4. Major Modules Found in a CRM
+
+Modern Enterprise CRM architectures are broken down into specialized operational modules to manage distinct phases of the customer lifecycle. Core modules include:
+
+*   **Core Data Elements:**
+    *   **Contacts:** Individual person records containing PII (personally identifiable information), communication preferences, and personal interaction history.
+    *   **Accounts:** Company or organizational entities that group multiple individual contacts under a single corporate umbrella.
+*   **Sales Pipeline & Execution:**
+    *   **Leads:** Unverified, top-of-funnel prospects or raw inquiries requiring qualification by SDRs (Sales Development Representatives).
+    *   **Opportunities:** Qualified sales deals with mapped revenue potential, specific deal stages, and win probabilities.
+*   **Productivity & Workflows:**
+    *   **Activities:** The audit trail of interactions (emails sent, calendar events, notes) associated with any record.
+    *   **Tasks:** Discrete, actionable items assigned to internal users with specific due dates and status tracking.
+*   **Growth & Service Delivery:**
+    *   **Marketing Campaigns:** Top-of-funnel initiatives tracked across channels to measure audience acquisition cost and conversion metrics.
+    *   **Customer Support Tickets:** Post-sale case records documenting customer issues, severity tiers, and resolution paths tied to SLAs (Service Level Agreements).
+*   **Intelligence & Insights:**
+    *   **Reports:** Raw data queries aggregated into tabular formats to track baseline metrics.
+    *   **Dashboards:** Real-time visual layers mapping complex components (charts, graphs, velocity meters) derived from underlying reports for executive decision-making.
