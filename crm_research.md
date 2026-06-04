@@ -154,3 +154,25 @@ EspoCRM Evaluation
 * **Installation Experience:** The online demo is instant and effortless. However, installing it on a private server requires configuring databases and background tasks. Using Docker is the easiest way to skip this setup headache.
 * **Product Features:** The free tier includes excellent core sales tracking, calendars, and email tools that load incredibly fast. However, it lacks built-in AI, and advanced reporting or Google/Outlook calendar syncing require buying paid add-ons.
 * **Real-World Viability:** **Yes for small and medium businesses** because regular managers can easily customize fields and screens without hiring a programmer. **No for massive corporations** that need complex global inventory, compliance, or international accounting tools out of the box.
+
+## Useful Libraries
+
+To accelerate development and avoid rebuilding core utilities from scratch, the architecture incorporates five industry-standard open-source tools:
+
+* **Composer:** Serves as the dependency manager for PHP. It automates the installation, version locking, and updating of external backend packages, ensuring a consistent codebase across environments.
+* **Bootstrap:** A front-end toolkit providing pre-built, responsive CSS components (grids, buttons, forms). It ensures the CRM user interface looks professional and adapts fluidly to desktop, tablet, and mobile screens.
+* **DataTables:** A jQuery plugin that transforms basic HTML tables into advanced, interactive data grids. It provides out-of-the-box sorting, multi-column filtering, pagination, and instant search capabilities for client logs.
+* **Chart.js:** A flexible JavaScript charting library used to render the executive dashboard layer. It converts raw relational data arrays (e.g., pipeline value by month) into clean, interactive bar, pie, or line charts.
+* **PHPMailer:** A robust email delivery class for PHP. It replaces the unreliable and insecure native web mail scripts, offering a secure layer to handle attachments, HTML-formatted templates, and SMTP authentication for transactional notifications.
+
+---
+
+## Security Considerations
+
+To safeguard sensitive client logs, intellectual property, and user access records, the application implements five critical security boundaries:
+
+* **Authentication & Password Security:** Passwords must never be stored as plain text. The application uses strong cryptography algorithms via PHP's native `password_hash()` using `PASSWORD_DEFAULT` (currently leveraging the robust **Bcrypt** algorithm). 
+* **Authorization:** Access controls are checked on every single page load or API endpoint invocation. System routers verify the current active session data against the user's assigned `Role_ID` to block unauthorized standard users from reaching restricted administrative or financial panels.
+* **SQL Injection Prevention:** To prevent attackers from executing arbitrary database commands via input forms, the PHP application layer strictly uses **PHP Data Objects (PDO)** with **Prepared Statements**. This forces the MySQL database engine to handle user inputs exclusively as literal data values rather than executable code instructions.
+* **Cross-Site Scripting (XSS) Prevention:** To stop malicious scripts from being saved into text fields and running in another user’s browser, all dynamic data pulled from the database is scrubbed using `htmlspecialchars()` before being rendered into the browser DOM.
+* **Data Privacy Compliance:** To align with modern digital data privacy standards, the data layer includes architectural delete cascades. This enables administrators to completely purge or cleanly anonymize an individual contact record and all related history if a customer formally exercises their right to be forgotten.
