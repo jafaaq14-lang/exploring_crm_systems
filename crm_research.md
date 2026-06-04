@@ -148,3 +148,9 @@ The application states below were captured from the local running container arch
 *   **Reports or Analytics Module Verification:**
     `![Reports](screenshots/reports.png)`
     *System Detail:* Validates background database aggregation filters and chart engine outputs.
+
+EspoCRM Evaluation
+
+* **Installation Experience:** The online demo is instant and effortless. However, installing it on a private server requires configuring databases and background tasks. Using Docker is the easiest way to skip this setup headache.
+* **Product Features:** The free tier includes excellent core sales tracking, calendars, and email tools that load incredibly fast. However, it lacks built-in AI, and advanced reporting or Google/Outlook calendar syncing require buying paid add-ons.
+* **Real-World Viability:** **Yes for small and medium businesses** because regular managers can easily customize fields and screens without hiring a programmer. **No for massive corporations** that need complex global inventory, compliance, or international accounting tools out of the box.
