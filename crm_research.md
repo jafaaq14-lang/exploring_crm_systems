@@ -131,10 +131,10 @@ This section details the deployment configuration and functional evaluation of *
 
 ### System Verification Artifacts
 
-The application states below were captured from the local running container architecture and committed to the repository structure:
+The application states below were captured from the local running container architecture and committed to the repository structure, in their own files:
 
 *   **Login Screen Verification:**
-    `![Login Screen]("C:\Users\Jaffe\Downloads\epsocrm\Login.png")`
+    `![Login Screen]("screenshots/Login.png")`
     *System Detail:* Verifies functional session routing and core framework initialization.
 *   **Dashboard Verification:**
     `![Dashboard](screenshots/dashboard.png)`
